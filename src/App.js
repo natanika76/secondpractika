@@ -1,29 +1,30 @@
 import './App.css';
 
+
+function Spisok() {
+  return (
+          <ul>
+            <li>Гамлет</li>
+            <li>Макбет</li>
+            <li>Тит Андроник</li>
+          </ul>  
+  );
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <div>Уи́льям Шекспи́р  — английский поэт и драматург, зачастую считается величайшим
+         англоязычным писателем и одним из лучших драматургов мира. Часто именуется
+          национальным поэтом Англии.</div>
+         {Spisok()} 
+          
     </div>
   );
 }
+
+
+
+
 
 export default App;
